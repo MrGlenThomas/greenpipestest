@@ -21,7 +21,8 @@
 		        Id = Guid.NewGuid(),
 		        CustomerId = Guid.NewGuid(),
 		        Items = new List<ShoppingCartProductItem>(productItemProvider.AllProductItems()
-			        .Select(item => new ShoppingCartProductItem {ProductId = item.Id, Quantity = 2})).ToArray()
+			        .Select(item => new ShoppingCartProductItem {ProductId = item.Id, Quantity = 2})).ToArray(),
+				DiscountCode = "50PERCENTOFFSALE"
 	        };
 
 	        var pipeline = container.GetInstance<IShoppingCartPipeline>().Build();

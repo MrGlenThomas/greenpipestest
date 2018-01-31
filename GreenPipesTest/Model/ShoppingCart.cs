@@ -17,5 +17,9 @@
 		public double ShippingCost { get; set; }
 
 		public double TotalCost { get; set; }
+
+		public double TotalDiscount { get; set; }
+
+		public string DiscountCode { get; set; }
 	}
 }

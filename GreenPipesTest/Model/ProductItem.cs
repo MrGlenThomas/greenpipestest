@@ -9,5 +9,7 @@
 		public double Cost { get; set; }
 
 		public double Weight { get; set; }
-    }
+
+	    public bool IsOnSale { get; set; }
+	}
 }

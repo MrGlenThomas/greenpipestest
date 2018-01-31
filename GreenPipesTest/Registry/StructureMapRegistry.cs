@@ -2,6 +2,7 @@
 {
 	using Configuration;
 	using Data;
+	using Discount;
 	using Pipelines;
 	using StructureMap;
 
@@ -15,6 +16,7 @@
 				{
 					x.TheCallingAssembly();
 					x.WithDefaultConventions();
+					x.AddAllTypesOf<IDiscount>();
 				});
 
 				_.For<IStoreOptions>().Use<InMemoryStoreOptions>();

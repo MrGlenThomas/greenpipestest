@@ -12,7 +12,8 @@
 		    output.AppendLine($"Customer ID: {shoppingCart.CustomerId}");
 		    output.AppendLine($"Items Cost: £{shoppingCart.ItemsTotalCost}");
 		    output.AppendLine($"Shipping Cost: £{shoppingCart.ShippingCost}");
-		    output.AppendLine($"Total Cost: £{shoppingCart.TotalCost}");
+		    output.AppendLine($"Total Discount: £{shoppingCart.TotalDiscount}");
+			output.AppendLine($"Total Cost: £{shoppingCart.TotalCost}");
 
 		    return output.ToString();
 	    }
